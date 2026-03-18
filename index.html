@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fatima Aarab — Cybersécurité & Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAV
+  ══════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">FA<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#education">Formation</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <header id="hero">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-tag"><span class="blink">▮</span>&nbsp; Disponible pour un stage</p>
+      <h1 class="hero-name">Fatima<br/><em>Aarab</em></h1>
+      <p class="hero-title">Élève ingénieure en <strong>Cybersécurité</strong><br/>& Confiance Numérique</p>
+      <p class="hero-location">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Casablanca, Maroc &mdash; ENSET Mohammedia
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn-primary">Me contacter</a>
+        <a href="#projects" class="btn-ghost">Voir mes projets</a>
+      </div>
+    </div>
+    <div class="hero-terminal" aria-hidden="true">
+      <div class="terminal-bar"><span></span><span></span><span></span></div>
+      <div class="terminal-body">
+        <p><span class="t-prompt">fatima@enset:~$</span> whoami</p>
+        <p class="t-out">Fatima Aarab — Cybersécurité</p>
+        <p><span class="t-prompt">fatima@enset:~$</span> cat skills.txt</p>
+        <p class="t-out">HTML · CSS · Python · Java</p>
+        <p class="t-out">Réseaux · CCNA · Linux</p>
+        <p class="t-out">MySQL · TryHackMe · picoCTF</p>
+        <p><span class="t-prompt">fatima@enset:~$</span> echo $STATUS</p>
+        <p class="t-out t-green">OPEN_FOR_INTERNSHIP=true</p>
+        <p><span class="t-prompt">fatima@enset:~$</span> <span class="t-cursor">█</span></p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════
+         À PROPOS
+    ══════════════════════════════════════ -->
+    <section id="about">
+      <div class="container">
+        <div class="section-label">01 &mdash; À propos</div>
+        <div class="about-grid">
+          <div class="about-photo-wrap">
+            <div class="about-photo-frame">
+              <!-- Remplacer src par votre photo réelle -->
+              <img
+                src="https://ui-avatars.com/api/?name=Fatima+Aarab&background=0a2a1f&color=4fffb0&size=300&bold=true&font-size=0.33"
+                alt="Photo de profil de Fatima Aarab"
+                class="about-photo"
+              />
+              <div class="photo-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+                Cybersécurité
+              </div>
+            </div>
+          </div>
+          <div class="about-text">
+            <h2>Bonjour, je suis Fatima <span class="accent">👋</span></h2>
+            <p>Autonome et enthousiaste, j'étudie la <strong>cybersécurité et confiance numérique</strong> à l'ENSET Mohammedia. Mon parcours en CPGE scientifique (PSI) m'a forgé une rigueur analytique que j'applique aujourd'hui aux problématiques de sécurité web et de réseaux.</p>
+            <p>Je pratique des challenges CTF sur <strong>TryHackMe</strong> et <strong>picoCTF</strong>, et je gère un blog éducatif pour étudiants CPGE. Toujours curieuse, toujours en apprentissage.</p>
+            <div class="about-stats">
+              <div class="stat"><strong>3</strong><span>Certifications</span></div>
+              <div class="stat"><strong>2+</strong><span>Projets actifs</span></div>
+              <div class="stat"><strong>CCNA</strong><span>Réseaux</span></div>
+            </div>
+            <div class="about-langs">
+              <span class="lang-badge">🇲🇦 Arabe</span>
+              <span class="lang-badge">🇫🇷 Français</span>
+              <span class="lang-badge">🇬🇧 Anglais</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         FORMATION
+    ══════════════════════════════════════ -->
+    <section id="education" class="dark-section">
+      <div class="container">
+        <div class="section-label light">02 &mdash; Formation</div>
+        <h2 class="section-title light">Parcours académique</h2>
+        <div class="timeline">
+
+          <article class="timeline-item">
+            <div class="timeline-dot active"></div>
+            <div class="timeline-date">2025 &rarr; aujourd'hui</div>
+            <div class="timeline-card">
+              <div class="tc-header">
+                <div class="tc-icon">🎓</div>
+                <div>
+                  <h3>Cycle ingénieur — Cybersécurité & Confiance Numérique</h3>
+                  <p class="tc-school">ENSET Mohammedia</p>
+                </div>
+                <span class="tc-badge current">En cours</span>
+              </div>
+              <p class="tc-desc">Formation d'ingénieur spécialisée en sécurité des systèmes d'information, cryptographie, réseaux sécurisés et forensic numérique. Campus à Mohammedia, rattaché à l'Université Hassan II.</p>
+              <div class="tc-tags">
+                <span>Cryptographie</span><span>Sécurité web</span><span>Forensic</span><span>Réseaux</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022 &rarr; 2025</div>
+            <div class="timeline-card">
+              <div class="tc-header">
+                <div class="tc-icon">📐</div>
+                <div>
+                  <h3>CPGE Scientifique — Filière PSI</h3>
+                  <p class="tc-school">Lycée Mohammed V — Casablanca</p>
+                </div>
+                <span class="tc-badge done">Obtenu</span>
+              </div>
+              <p class="tc-desc">Classes préparatoires aux grandes écoles, filière Physique et Sciences de l'Ingénieur. Rigueur mathématique, physique appliquée et préparation aux concours nationaux des grandes écoles.</p>
+              <div class="tc-tags">
+                <span>Mathématiques</span><span>Physique</span><span>Informatique</span><span>SI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2019 &rarr; 2022</div>
+            <div class="timeline-card">
+              <div class="tc-header">
+                <div class="tc-icon">🏫</div>
+                <div>
+                  <h3>Baccalauréat Sciences mathématiques</h3>
+                  <p class="tc-school">Lycée Haj Mohamed Nacciri — Casablanca</p>
+                </div>
+                <span class="tc-badge done">Obtenu</span>
+              </div>
+              <p class="tc-desc">Baccalauréat scientifique option sciences mathématiques avec mention. Bases solides en mathématiques, physique et chimie ayant permis l'accès aux classes préparatoires.</p>
+              <div class="tc-tags">
+                <span>Sciences Physiques</span><span>Mathématiques</span><span>Chimie</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Certifications -->
+        <h3 class="sub-title light">Certifications</h3>
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-icon">🐍</div>
+            <strong>Python Essentials 1</strong>
+            <span>Cisco NetAcad</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🌐</div>
+            <strong>CCNA 1 — Introduction to Networks</strong>
+            <span>Cisco NetAcad</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🐧</div>
+            <strong>Linux Essentials</strong>
+            <span>Cisco NetAcad</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🔐</div>
+            <strong>Introduction to Cybersecurity</strong>
+            <span>Cisco NetAcad</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         COMPÉTENCES
+    ══════════════════════════════════════ -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-label">03 &mdash; Compétences</div>
+        <h2 class="section-title">Expertise technique</h2>
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h3><span class="sg-icon">🌐</span> Développement Web</h3>
+            <ul>
+              <li><span class="skill-name">HTML5</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></li>
+              <li><span class="skill-name">CSS3</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3><span class="sg-icon">💻</span> Programmation</h3>
+            <ul>
+              <li><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></li>
+              <li><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div></li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3><span class="sg-icon">🗄️</span> Bases de données</h3>
+            <ul>
+              <li><span class="skill-name">MySQL</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></li>
+              <li><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3><span class="sg-icon">🔌</span> Réseaux</h3>
+            <ul>
+              <li><span class="skill-name">OSI & TCP/IP</span><div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div></li>
+              <li><span class="skill-name">Cisco Packet Tracer</span><div class="skill-bar"><div class="skill-fill" style="--w:72%"></div></div></li>
+              <li><span class="skill-name">DNS · DHCP · HTTP · FTP</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3><span class="sg-icon">🛡️</span> Cybersécurité</h3>
+            <ul>
+              <li><span class="skill-name">TryHackMe</span><div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div></li>
+              <li><span class="skill-name">picoCTF</span><div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div></li>
+              <li><span class="skill-name">Linux / CLI</span><div class="skill-bar"><div class="skill-fill" style="--w:68%"></div></div></li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3><span class="sg-icon">🤝</span> Soft Skills</h3>
+            <div class="soft-skills">
+              <span>Autonomie</span>
+              <span>Curiosité</span>
+              <span>Rigueur</span>
+              <span>Esprit d'analyse</span>
+              <span>Travail en équipe</span>
+              <span>Communication</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         EXPÉRIENCE (exemples entreprises maroc)
+    ══════════════════════════════════════ -->
+    
+    <!-- ══════════════════════════════════════
+         PROJETS
+    ══════════════════════════════════════ -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-label">05 &mdash; Projets</div>
+        <h2 class="section-title">Réalisations</h2>
+        <div class="projects-grid">
+
+          <article class="project-card featured">
+            <div class="pc-top">
+              <span class="pc-tag">Application Web</span>
+              <span class="pc-date">02/2026 &rarr; aujourd'hui</span>
+            </div>
+            <h3>Gestion de Service Doctoral</h3>
+            <p>Plateforme web multi-rôles pour la gestion et la visibilité d'un service doctoral. Fonctionnalités de gestion interne, communication et organisation des activités académiques.</p>
+            <div class="pc-stack">
+              <span>HTML/CSS</span><span>Python</span><span>MySQL</span><span>Multi-rôles</span>
+            </div>
+            <div class="pc-links">
+              <a href="#" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Code
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="pc-top">
+              <span class="pc-tag">TIPE — CPGE</span>
+              <span class="pc-date">11/2024 &rarr; 05/2025</span>
+            </div>
+            <h3>Suivi Solaire Photovoltaïque</h3>
+            <p>Étude et optimisation d'un système de suivi solaire double axe pour maximiser la production d'énergie photovoltaïque. Simulation sur Tinkercad et analyse de stabilité.</p>
+            <div class="pc-stack">
+              <span>Tinkercad</span><span>Arduino</span><span>Simulation</span><span>Énergie</span>
+            </div>
+            <div class="pc-links">
+              <a href="#" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Voir
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="pc-top">
+              <span class="pc-tag">Streamlit / Python</span>
+              <span class="pc-date">2025</span>
+            </div>
+            <h3>Plateforme Gestion Ressources Éducatives</h3>
+            <p>Application web Streamlit multi-rôles (étudiants, professeurs, administrateurs) pour la gestion de ressources pédagogiques numériques avec analytics d'utilisation.</p>
+            <div class="pc-stack">
+              <span>Python</span><span>Streamlit</span><span>MySQL</span><span>Analytics</span>
+            </div>
+            <div class="pc-links">
+              <a href="#" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Demo
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CONTACT
+    ══════════════════════════════════════ -->
+    <section id="contact" class="dark-section">
+      <div class="container">
+        <div class="section-label light">06 &mdash; Contact</div>
+        <h2 class="section-title light">Travaillons ensemble</h2>
+        <p class="contact-sub">Ouverte aux opportunités de stage en cybersécurité, réseaux et développement sécurisé.</p>
+        <div class="contact-grid">
+          <a href="mailto:fatimaaaarab120@gmail.com" class="contact-card" rel="noopener noreferrer">
+            <div class="cc-icon">✉️</div>
+            <strong>Email</strong>
+            <span>fatimaaaarab120@gmail.com</span>
+          </a>
+          <a href="tel:+212645809573" class="contact-card" rel="noopener noreferrer">
+            <div class="cc-icon">📞</div>
+            <strong>Téléphone</strong>
+            <span>+212 6 45 80 95 73</span>
+          </a>
+          <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="cc-icon">💼</div>
+            <strong>LinkedIn</strong>
+            <span>fatima-aarab</span>
+          </a>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="cc-icon">🐙</div>
+            <strong>GitHub</strong>
+            <span>fatima-aarab</span>
+          </a>
+          <a href="https://tryhackme.com/" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="cc-icon">🚩</div>
+            <strong>TryHackMe</strong>
+            <span>Profil CTF</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-name">Fatima Aarab<span class="dot">.</span></p>
+      <nav class="footer-nav" aria-label="Navigation de pied de page">
+        <a href="#about">À propos</a>
+        <a href="#education">Formation</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2025 Fatima Aarab — ENSET Mohammedia · Cybersécurité</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll active nav link
+    const sections = document.querySelectorAll('section[id], header[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          const link = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+          if (link) link.classList.add('active');
+        }
+      });
+    }, { threshold: 0.4 });
+    sections.forEach(s => obs.observe(s));
+
+    // Scroll-reveal
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('revealed'); revealObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.timeline-item, .project-card, .exp-card, .cert-card, .skill-group, .contact-card').forEach(el => {
+      el.classList.add('reveal');
+      revealObs.observe(el);
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // Hamburger menu
+    document.getElementById('hamburger').addEventListener('click', function () {
+      document.querySelector('.nav-links').classList.toggle('open');
+      this.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
